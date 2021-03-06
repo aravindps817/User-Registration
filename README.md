@@ -5,8 +5,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.5.
 
 # Credentials 
-## USERNAME: admin
-## Password: password
+## USERNAME: admin,  PASSWORD: password
 
 ## Development server
 
