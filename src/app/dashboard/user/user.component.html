@@ -1,0 +1,68 @@
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Add New User</h5>
+    <div class="form-row">
+      <div class="form-group col-md-3 col-sm-6 col-12">
+        <label class="block-display">Title</label>
+        <select [(ngModel)]="user.name.title" class="form-control">
+          <option [ngValue]=null>--Select--</option>
+          <option value="Mr">Mr</option>
+          <option value="Miss">Miss</option>
+          <option value="Mrs">Mrs</option>
+          <option value="Ms">Ms</option>
+          <option value="Dr">Dr</option>
+          <option value="Prof">Prof</option>
+        </select>
+      </div>
+      <div class="form-group col-md-3 col-sm-6 col-12">
+        <label class="block-display">First Name</label>
+        <input type="text" id="user-firstname" placeholder="First Name" class="form-control"
+          [(ngModel)]="user.name.first" autocomplete="off"  />
+      </div>
+      <div class="form-group col-md-3 col-sm-6 col-12">
+        <label class="block-display">Last Name</label>
+        <input type="text" id="user-secondname" placeholder="Last Name" class="form-control"
+          [(ngModel)]="user.name.last" autocomplete="off"/>
+      </div>
+      <div class="form-group col-md-3 col-sm-6 col-12">
+        <label class="block-display">Gender</label>
+        <input type="text" id="user-secondname" placeholder="Gender" class="form-control"
+          [(ngModel)]="user.gender" autocomplete="off"/>
+      </div>
+      <div class="form-group col-md-3 col-sm-6 col-12">
+        <label class="block-display">User Name</label>
+        <input type="text" id="username" placeholder="Full Name" class="form-control" autocomplete="off"
+          [(ngModel)]="user.username"  >
+      </div>
+      <div class="form-group col-md-3 col-sm-6 col-12">
+        <label class="block-display">Password</label>
+        <input class="form-control" type="password" id="user-password" autocomplete="off" placeholder="Password"
+          [(ngModel)]="user.password" />
+      </div>
+      <div class="form-group col-md-3 col-sm-6 col-12">
+        <label class="block-display">DOB</label>
+        <input class="form-control" type="date" id="user-dob" placeholder="Email"
+          [(ngModel)]="user.dob" autocomplete="off"/>
+      </div>
+      <div class="form-group col-md-3 col-sm-6 col-12">
+        <label class="block-display">Phone</label>
+        <div>
+          <input class="form-control" type="tel" id="user-phone" placeholder="Phone Number"
+            [(ngModel)]="user.phone" autocomplete="off"/>
+        </div>
+      </div>
+      <div class="form-group col-md-3 col-sm-6 col-12">
+        <label class="block-display">Email ID</label>
+        <input class="form-control" type="email" id="user-emailid" placeholder="Email"
+          [(ngModel)]="user.email" autocomplete="off"/>
+      </div>
+      <div class="form-group text-right mt-4 col-md-9 col-sm-6 col-12">
+        <button type="button" id="award-non-employee-close-btn" class="btn btn-secondary btn-sm" data-dismiss="modal"
+          (click)="clearUserDetails()">Cancel</button>
+        <button type="button" id="award-non-employee-add-btn" class="btn btn-primary ml-2 btn-sm" (click)="saveUser()"
+        >Save</button>
+      </div>
+    </div>       
+   
+  </div>
+</div>

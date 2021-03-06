@@ -1,0 +1,15 @@
+.adjust-wh {
+    width: 7%;
+}
+
+.az-header {
+    color: white;
+    background-color: #000;
+}
+
+.link {
+    color: white!important;
+}
+.link:hover{
+    color: rgb(106, 106, 255)!important;
+}

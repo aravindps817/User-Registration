@@ -1,0 +1,19 @@
+<div class="az-signin-wrapper">
+  <div class="az-card-signin">
+    <div ><img class="adjust-wh" src="../../../assets/img/logo.png" alt="White Rabit"></div>
+    <div class="az-signin-header">
+     <form >
+        <div class="form-group">
+          <input type="text" class="form-control" [(ngModel)]="credentials.username" [ngModelOptions]="{standalone: true}"  placeholder="Enter your username">
+        </div><!-- form-group -->
+        <div class="form-group">
+          <input type="password" class="form-control" [(ngModel)]="credentials.password" [ngModelOptions]="{standalone: true}"  placeholder="Enter your password">
+        </div><!-- form-group -->
+        <button class="btn btn-az-primary btn-block"  (click)="login()">Sign In</button>
+        <div class="position-absolute bottom-5px mt-1 text-muted login-error" id="login-failure" *ngIf="loginFail">
+          <div class="text-danger">Incorrect username or password.Please try again.</div> 
+        </div>
+      </form>
+    </div><!-- az-signin-header -->
+  </div><!-- az-card-signin -->
+</div><!-- az-signin-wrapper -->

@@ -1,0 +1,10 @@
+{
+    "/getAllUsers": {
+        "target": "https://randomuser.me",
+        "secure": true,
+        "changeOrigin": true,
+        "pathRewrite": {
+        "^/getAllUsers": ""
+      }
+    }
+}
