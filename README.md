@@ -1,7 +1,7 @@
 
-#Credentials 
-USERNAME: admin
-Password: password
+# Credentials 
+# USERNAME: admin
+# Password: password
 
 # UserRegistration
 
